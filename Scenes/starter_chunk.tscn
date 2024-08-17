@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr15kf7j4jwlu"]
+
+[ext_resource type="Texture2D" uid="uid://bro8xkrwaclxx" path="res://Assets/icon.svg" id="1_0i853"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2dnll"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0j6dg"]
+
+[node name="StarterChunk" type="Node2D"]
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-322, -2.62658e-13)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("WorldBoundaryShape2D_2dnll")
+
+[node name="Sprite2D" type="Sprite2D" parent="LeftWall"]
+position = Vector2(0, 62)
+scale = Vector2(48.17, 1)
+texture = ExtResource("1_0i853")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(322, 2.08165e-12)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("WorldBoundaryShape2D_0j6dg")
+
+[node name="Sprite2D" type="Sprite2D" parent="RightWall"]
+position = Vector2(2, 64)
+scale = Vector2(49.507, 1)
+texture = ExtResource("1_0i853")

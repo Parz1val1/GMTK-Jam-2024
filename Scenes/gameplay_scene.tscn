@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ib78ye0jsewq"]
+
+[ext_resource type="PackedScene" uid="uid://dry5u8et7e8mv" path="res://Scenes/player_controller.tscn" id="1_ed3li"]
+[ext_resource type="PackedScene" uid="uid://58st0wlsijj7" path="res://Scenes/level_controller.tscn" id="2_cdk3p"]
+
+[node name="GameplayScene" type="Node2D"]
+
+[node name="PlayerController" parent="." instance=ExtResource("1_ed3li")]
+
+[node name="LevelController" parent="." instance=ExtResource("2_cdk3p")]

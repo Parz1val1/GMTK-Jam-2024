@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://58st0wlsijj7"]
+
+[ext_resource type="PackedScene" uid="uid://cr15kf7j4jwlu" path="res://Scenes/starter_chunk.tscn" id="1_2wjdt"]
+
+[node name="LevelController" type="Node2D"]
+
+[node name="StarterChunk" parent="." instance=ExtResource("1_2wjdt")]
+position = Vector2(0, 2553)
